@@ -31,19 +31,9 @@ document.querySelector(".check-btn").addEventListener("click", function () {
     document.querySelector(".correctnumber").textContent =
       "WRONG NUMBER MATE❌!";
     document.querySelector("article").style.backgroundColor = "#af111c";
-    if (z == 20) {
-      z--;
-    } else {
-      z--;
-    }
-    if (z <= 0) {
-      document.querySelector(".correctnumber").textContent = "You lost mate!😥";
-    }
+     z--;
     document.querySelector(".sc").textContent = z;
-    if (z > highscore) {
-      highscore = z;
-      document.querySelector(".h").textContent = highscore;
-    }
+  
   }
   if (!x) {
     document.querySelector(".Number").textContent = "❌";
